@@ -17,6 +17,18 @@ public class HomeController {
     // @ResponseBody의 의미
     // 아래 메서드를 실행한 후 그 리턴값을 응답으로 삼아줘
     public String showHome() {
-        return "안녕하세요";
+        return "안녕하세요1";
+    }
+
+    @GetMapping("/home/main2")
+    @ResponseBody
+    public String showHome2() {
+        return "안녕하세요2";
+    }
+
+    @GetMapping("/home/main3")
+    @ResponseBody
+    public String showHome3() {
+        return "안녕하세요3";
     }
 }
